@@ -12,9 +12,7 @@ galleryRef.insertAdjacentHTML("beforeend", galleryMarkup);
 galleryRef.addEventListener("click", (e) => {
   e.preventDefault();
 });
-var lightbox = new SimpleLightbox(".gallery a", {
-  captionsData: document.querySelector("img[alt]"),
+let lightbox = new SimpleLightbox(".gallery a", {
+  captionsData: "alt",
   captionDelay: 300,
 });
-
-console.log(galleryItems);
